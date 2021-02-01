@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <!--arquivos da fonte quicksand que baixei do google fontes-->
+    <link rel="stylesheet" type="text/css" href="css/gfontquicksand.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Formulário - Des Web</title>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="title_form">
+            <label id="lab_titulo">
+                Projeto adaptado - Des Web
+            </label>
+            <lable>
+                <i>
+                    Exemplo de formulário de pesquisa (Survey)
+                </i>
+            </lable>
+        </div>
+        <form action="#">
+            <div class="form_line">
+                <label for="login">Nome</label>
+                <input type="text" name="login" id="login" placeholder="Coloque seu nome...">
+            </div>
+            <div class="form_line">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Coloque o seu Email...">
+            </div>
+            <div class="form_line">
+                <label for="idade">Idade</label>
+                <label for="idade">(opicional)</label>
+                <input type="number" name="idade" id="idade" placeholder="Idade">
+            </div>
+            <div class="form_line">
+                <label for="estado">Qual opção melhor descreve seu estado atual?</label>
+                <select name="estado" id="estado">
+                    <option value="" selected disabled>Selecione a ocupação</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="clt">CLT</option>
+                    <option value="nao_dizer">Prefiro não dizer</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <div class="form_line">
+                <lable>Você recomendaria esse projeto?</lable>
+                <div class="radio_line">
+                    <input id="opc_r_com_certeza" type="radio" name="recomendacao" value="com_certeza">
+                    <label for="opc_r_com_certeza">Com certeza</label>
+                </div>
+                <div class="radio_line">
+                    <input id="opc_r_talvez" type="radio" name="recomendacao" value="talvez">
+                    <label for="opc_r_talvez">Talvez</label>
+                </div>
+                <div class="radio_line">
+                    <input id="opc_r_nao_sei" type="radio" name="recomendacao" value="com_nao_sei">
+                    <label for="opc_r_nao_sei">Não sei</label>
+                </div>
+            </div>
+            <div class="form_line">
+                <lable>O que você gostaria de melhorar?</lable>
+                <lable class="text_extra">(Selecione quantas quiser.)</lable>
+                <div class="checkbox_line">
+                    <input id="opc_c_mais_tempo" type="checkbox" name="melhora" value="mais_tempo">
+                    <label for="opc_c_mais_tempo">Ter mais tempo para estudar</label>
+                </div>
+                <div class="checkbox_line">
+                    <input id="opc_c_o_que_gosto" type="checkbox" name="melhora" value="o_que_gosto">
+                    <label for="opc_c_o_que_gosto">Estudar mais o que gosto</label>
+                </div>
+                <div class="checkbox_line">
+                    <input id="opc_c_gerencia" type="checkbox" name="melhora" value="gerencia">
+                    <label for="opc_c_gerencia">Gerência de projetos</label>
+                </div>
+                <div class="checkbox_line">
+                    <input id="opc_c_nodejs" type="checkbox" name="melhora" value="nodejs">
+                    <label for="opc_c_nodejs">NodeJS</label>
+                </div>
+            </div>
+            <div class="form_line">
+                <label for="sugestao">Algum comentário ou sugestão?</label>
+                <textarea id="sugestao" name="sugestao" rows="6"
+                    placeholder="Insira seu comentario ou sugestão aqui..."></textarea>
+            </div>
+            <div class="form_line">
+                <input type="submit" value="Enviar" id="btn_enviar">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

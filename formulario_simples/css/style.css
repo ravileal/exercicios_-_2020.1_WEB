@@ -1,0 +1,75 @@
+
+
+html{
+    background-image: url(../img/background_1980x1080.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    background-size: 100% 100%;
+    color: white;
+}
+
+.content{
+    font-family: Quicksand, Arial ;
+    margin: 0 auto;
+    width: 40%;
+    
+}
+
+.title_form{
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+}
+
+#lab_titulo{
+    display: block;
+    clear: both;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.form_line{
+    margin-top: 3%;
+    width: 100%;
+}
+
+form{
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.form_line input, textarea, .radio_line, .checkbox_line, select{
+    margin-top: 0.8%;
+}
+
+#login, #email, #idade, #estado, textarea{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1.5%;
+    font-family: arial;
+}
+
+#login, #email, #idade, #estado, .content, #btn_enviar, select{
+    border: 1px;
+    border-radius: 4px;
+}
+
+.content input[type="checkbox"],
+.content input[type="radio"]
+{
+    margin-left: 0px;
+}
+
+#btn_enviar{
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(38, 177, 45, 1);
+    border: 0px;
+    color: white;
+}
+
+.text_extra{
+    font-size: 13px;
+}
